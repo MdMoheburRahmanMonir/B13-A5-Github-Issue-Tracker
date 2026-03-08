@@ -64,7 +64,7 @@ const renderData = data => {
         div.className = `border-t-4  ${status === 'open' ? 'border-green-600' : status === 'closed' ? 'border-purple-500' : ''} rounded-lg p-4 shadow-md`;
         div.innerHTML = `
         <div class="flex justify-between items-center mb-3">
-                    <img src="${status === 'open' ? '../assets/Open-Status.png' : '../assets/Closed- Status .png'}" alt="">
+                    <img src="${status === 'open' ? './assets/Open-Status.png' : './assets/Closed- Status .png'}" alt="">
                     <button class=" py-[2px] ${priority === 'high' ? ' bg-red-100 text-red-500' : priority === 'medium' ? ' bg-yellow-100 text-yellow-600' : priority === 'low' ? 'bg-gray-200' : ''} rounded-full w-[80px]">${priority.toUpperCase()}</button>
                 </div>
                 <h2 class="text-[14px] font-semibold text-black mb-2 line-clamp-1">${title}</h2>
