@@ -26,7 +26,36 @@
     </style>
 </head>
 
-<body >
-     
-</body> 
+<body class="flex justify-center items-center h-[100vh]">
+    <main class="w-1/4 flex items-center justify-center shadow shadow-lg rounded-lg ">
+        <fieldset class="fieldset   rounded-box w-xs  p-4">
+            <div class="text-center">
+                <i class="fa-brands fa-github text-[80px] mb-1"></i>
+                <h2 class="font-semibold text-[24px]">GitHub Issues Tracker</h2>
+                <p class="text-[14px] text-gray-600 mb-1">Sign in to manage your issues</p>
+            </div>
+            <label class="label  text-black font-bold">Username</label>
+            <input id="emailBox" type="email" class="input rounded-xl" placeholder="Email" />
+            <p class="text-blue-600">Default: admin</p>
+
+            <label class="label text-black font-bold">Password</label>
+            <input id="PassBox" type="password" class="input rounded-xl" placeholder="Password" />
+            <p class="text-blue-600">Default: admin123</p>
+
+            <button id="logInBtn" class="btn btn-primary mt-4 rounded-xl">Sign In</button>
+            <div class="flex items-center my-4">
+                <p class="flex-1 h-[1px] bg-black"></p>
+                <span class="px-4 font-bold text-black">OR</span>
+                <p class="flex-1 h-[1px] bg-black"></p>
+            </div>
+            <div class="text-center">
+                <p class="mb-3 text-gray-600 text-[12px]">Demo Credentials:</p>
+                <p>Username: admin</p>
+                <p>Password: admin123</p>
+            </div>
+        </fieldset>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+
 </html>
