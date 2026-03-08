@@ -33,7 +33,75 @@
 </head>
 
 <body>
-     <h1>body section</h1>
+    <!-- Navbar design area. -->
+    <main class=" border-b-2 border-gray-200">
+        <div class="w-10/12 mx-auto">
+            <div class="navbar    ">
+                <div class="flex-1 text-current">
+                    <h1 class="btn btn-ghost text-xl rounded-full"><i
+                            class="fa-brands fa-github text-[35px] "></i>GitHub Issues
+                        Tracker</h2>
+                </div>
+                <div class="flex gap-2">
+                    <div class="searchdiv border-2 pl-3 border-gray-500 rounded-full  ">
+                        <i class="  fa-solid fa-magnifying-glass"></i>
+                        <!-- Search input box for take input from user -->
+                        <input id="searchvalue" type="text" placeholder="Search issues..."
+                            class="searchinput rounded-full border-none input input-bordered w-24 md:w-auto" />
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <!-- Event handling button -->
+                        <button id="searchBTN" class="btn btn-primary rounded-full"> + New Issue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class=" bg-[#F8FAFC]">
+        <main class="w-10/12 mx-auto pt-[60px] pb-4">
+            <!-- Heading btn for rendering data differently -->
+            <div class="bg-white p-6 shadow-md flex gap-4">
+                <button onclick="tabSwitch('All')" id="All" class="btn btn-primary w-[100px]">All</button>
+                <button onclick="tabSwitch('Open')" id="Open" class="btn btn-outline w-[100px]">Open</button>
+                <button onclick="tabSwitch('Close')" id="Close" class="btn btn-outline w-[100px]">Close</button>
+            </div>
+        </main>
+        <section
+            class="flex w-10/12 mx-auto items-center justify-between gap-1 p-6 bg-white rounded-t-lg border-b-2 border-gray-200">
+            <div class="flex gap-3 items-center">
+                <img class="w-10 h-10 bg-[#ECE4FF]   rounded-full border border-[6px] border-[#ECE4FF]"
+                    src="./assets/camera-shutter.png" alt="">
+                <div class="">
+                    <!-- Total issue counter and shower area -->
+                    <h2 class="text-[20px] font-bold"><span id="totalIssue"> 0</span> Issues</h2>
+                    <p class="text-gray-600">Track and manage your project issues</p>
+                </div>
+            </div>
+            <div class="flex gap-4">
+                <p><i class="fa-solid fa-circle text-green-500"></i> Open</p>
+                <p><i class="fa-solid fa-circle text-purple-500"></i> Close</p>
+            </div>
+        </section>
+        <!-- Loading spinner area  -->
+        <section id="loaderContainer"
+            class="w-10/12 h-[200px] mx-auto flex items-center justify-center text-center w-full  hidden">
+            <span class="loading loading-bars loading-xl"></span>
+        </section>
+        <!-- Body data rendering area -->
+        <section id="randerSection"
+            class="  w-10/12 mx-auto grid lg:grid-cols-4 grid-cols-2 md:grid-cols-2  rounded-lg bg-[#FBFBFB] p-6 gap-3 shadow-lg">
+
+        </section>
+        <!-- Modal box design area && data will comes from js file. -->
+        <section>
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box" id="modalRanderSection">
+
+                </div>
+            </dialog>
+        </section>
+    </section>
+    <!-- JavaScript page linked -->
 </body>
 
 </html>
