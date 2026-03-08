@@ -1,90 +1,4 @@
-# 🌟 Welcome To (সহজ সরল সিম্পল) Assignment - 5
-
-# **📅 Deadline For 60 marks:** 9th March, 2026 (11:59 pm ⏱️)  
-#  📅 No Deadline For 50 marks  
-# **📅 Deadline For 30 marks:** Any time after 9th March.
-
----
-
-# Assignment-05: GitHub Issues Tracker
-
-
-### **API Endpoints:**
-###  **All Issues:** 
-  - https://phi-lab-server.vercel.app/api/v1/lab/issues 
-
-
-###  **Single Issue:**
-   - https://phi-lab-server.vercel.app/api/v1/lab/issue/{id}
-
-   - Example: https://phi-lab-server.vercel.app/api/v1/lab/issue/33
-
-
-###  **Search Issue:** https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q={searchText}
-
-   - Example:  https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=notifications
-
-
----
-
-## 📝 Main Requirements
-
-## 🎨 Design Part
-
-## Login Page
-- Create a login page containing a logo, title, and sub-title
-- Below that, there will be 2 inputs, a sign-in button, and a demo credential to sign in. Follow the Figma for this page 
-- Styled as per Figma
-
-## Main Page: 
-
-### Navbar: 
-
-- Navbar with website logo/name on the left
-- Search input and button on the right
-
-### Tab Section like Figma: 
-
-- 3 tab ( All, Open, Closed) at the top of this section.(**All**, **Open**, **Closed**)
-
-- Below the tab, there will be an icon, the issue count, some text on the left, and an open and closed marker on the right
-
-- Responsiveness: The website should be responsive for mobile devices. It is totally up to you. 
-
-
---- 
-
-
-## ⚙️ Functionalities
-- In login page, there will be default admin credentials (username, password). You need to sign in using these credentials.
-
-- Load all issues and display as per Figma
-
-- On clicking on an open or closed tab, it will load the issues data of the related tab and show it in a display-like card in a 4-column layout like Figma. By default, it will show all data 
-
-- Each card shows:
-  - Title
-  - Description
-  - Status
-  - Category
-  - Author
-  - Priority
-  - Label
-  - CreatedAt
-- Clicking on a tree name in a card will open a modal and show all the information about that Issue. 
-
-### 🚀 Challenges
-
-
-- Show the card Top border based on their category(open, closed), open card will have Green Boder, closed card will have a purple border on top. 
-
-- Loading spinner on data load
-
-- Show active button on changing category names
-
-- Implement Search Functionality and 8 meaningful github commit.  
-
-- Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
+  - Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
     - 1️⃣ What is the difference between var, let, and const?
     - 2️⃣ What is the spread operator (...)?
     - 3️⃣ What is the difference between map(), filter(), and forEach()?
@@ -93,37 +7,29 @@
 
 
 ---
+    - 1️⃣ What is the difference between var, let, and const?
+ Ans:- They have different type of behave. 
+        var:- var is function scope type.We can access var type variable from anywhere of the global scope or children block scope. Even var variable if inside any block scope doesn't matter we can access anywhere with out function scope. Only function second bracket inside it's makes different behave. that's whey this is function scope type.
 
-## 🛠️ Technology Stack
+        let:- let is block scope. But if we want we can reassign. If this is block scope that's mean we can't access let variable from parent scope. but we can access from children scope.
 
-- **HTML**
-- **CSS** (Vanilla/Tailwind/DaisyUI)
-- **JavaScript** (Vanilla)
+        const:- const is also block scope but 2nd time we can't assign for his behave. Const mean's it's constant assign. But we can change inside value. if it's object , array , map or set. But reassign is impossible.
 
----
+    - 2️⃣ What is the spread operator (...)?
+  Ans:- Spread (ছড়িয়ে দেয়া). It's makes a copy form main variable value. It's doesn't change main      variable. When we use (...) it's make a copy from parent variable to assign var as a copy value.
 
-## 🔑 Demo Credentials
+    - 3️⃣ What is the difference between map(), filter(), and forEach()?
+  Ans:-           This all method are array method.
+        map() :- map method take an array. then he takes a condition and he return's a new arr. but he doesn't change main array. He loops throw every element of the arr based on condition. 
 
-```text
-Username: admin
-Password: admin123
-```
+        filter():- filter take an array and he return a new array based on condition. but he doesn't change old array. He loops throw every element and pass the condition, if condition match then he added this value in the new array otherwise he not accept value. 
 
+        forEach():- forEach take a array and he loops throw every element. but he doesn't produce new array. He just go loop throw every element and task complete for every element.
 
----
+    - 4️⃣ What is an arrow function?
+  Ans:- Arrow function is new feature of ES6 version. It's makes shorter code and human readable friendly
+        and make's look like pretty. Mostly we have no need to write function key word when we write arrow function. if this is single line of task then we can omit return key word. if arrow function take a single parameters then we can omit firs bracket. there is many more beautiful functionality.
 
-### Optional: 
- - No need to show status: Open, Closed styles On modals. 
- - No Need to show icon on labels 
- - No need to apply styles on Priority 
---- 
-
-
-## 📤 What to submit
-
-- **GitHub Repository Link:**
-- **Live Site Link:**
-
----
-
-
+    - 5️⃣ What are template literals?
+  Ans:-  Template literals is a ES6 feature. Before release template literals we use single cote and
+          Double cote. which is make harder line of code. Template literals is support variable inside ${} bracket. And most important it's support nested template literals. which is make simple code. This it.
